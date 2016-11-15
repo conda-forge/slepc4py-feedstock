@@ -33,7 +33,6 @@ conda search slepc4py --channel conda-forge
 ```
 
 
-
 About conda-forge
 =================
 
