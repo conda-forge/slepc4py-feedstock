@@ -1,6 +1,8 @@
-{% set version = '3.9.0' %}
-{% set sha256 = '67ed4ffed36c076448d6a0148edfad65d6610b9838df97c79f6fc5d7ec06b90b' %}
+{% set version = '3.10.0' %}
+{% set sha256 = '326cbab709836cd5fe8e4adb60eaabe4e24537715bededd2812f3bc47c4b0474' %}
 {% set mpi = os.environ.get('MPI') or 'mpich' %}
+
+{% set version_xy = ".".join(version.split(".")[:2]) + ".*" %}
 
 package:
   name: slepc4py
@@ -12,7 +14,7 @@ source:
   sha256: {{sha256}}
 
 build:
-  number: 1
+  number: 0
   script: PETSC_DIR=$PREFIX SLEPC_DIR=$PREFIX pip -v install --no-deps .
   skip: true  # [win]
 
@@ -23,17 +25,17 @@ requirements:
     - python
     - pip
     - numpy
-    - {{mpi}}
-    - petsc {{version[:3]}}*
-    - slepc {{version[:3]}}*
-    - petsc4py {{version[:3]}}*
+    - {{ mpi }}
+    - petsc {{ version_xy }}
+    - slepc {{ version_xy }}
+    - petsc4py {{ version_xy }}
   run:
     - python
     - {{ pin_compatible('numpy') }}
-    - {{mpi}}
-    - petsc {{version[:3]}}*
-    - slepc {{version[:3]}}*
-    - petsc4py {{version[:3]}}*
+    - {{ mpi }}
+    - petsc {{ version_xy }}
+    - slepc {{ version_xy }}
+    - petsc4py {{ version_xy }}
 
 test:
   imports:
