@@ -36,11 +36,6 @@ requirements:
     - slepc {{ version_xy }}
     - petsc4py {{ version_xy }}
 
-test:
-  imports:
-    - slepc4py
-    - slepc4py.SLEPc
-
 about:
   home: https://bitbucket.org/slepc/slepc4py
   summary: Python bindings for SLEPc
