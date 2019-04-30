@@ -1,5 +1,5 @@
-{% set version = '3.10.0' %}
-{% set sha256 = '326cbab709836cd5fe8e4adb60eaabe4e24537715bededd2812f3bc47c4b0474' %}
+{% set version = '3.11.0' %}
+{% set sha256 = '9812d8b398fd6f30e872993421e420c64387c74fc3dab410208f13d7270257cf' %}
 
 {% set version_xy = ".".join(version.split(".")[:2]) + ".*" %}
 
@@ -13,7 +13,7 @@ source:
   sha256: {{sha256}}
 
 build:
-  number: 1000
+  number: 0
   script: PETSC_DIR=$PREFIX SLEPC_DIR=$PREFIX pip -v install --no-deps .
   skip: true  # [win]
 
@@ -35,6 +35,8 @@ requirements:
     - petsc {{ version_xy }}
     - slepc {{ version_xy }}
     - petsc4py {{ version_xy }}
+  run_constrained:
+    - mpi4py >=3.0.1
 
 about:
   home: https://bitbucket.org/slepc/slepc4py
