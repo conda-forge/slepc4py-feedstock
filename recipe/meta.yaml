@@ -35,6 +35,8 @@ requirements:
     - petsc {{ version_xy }}
     - slepc {{ version_xy }}
     - petsc4py {{ version_xy }}
+  run_constrained:
+    - mpi4py >=3.0.1
 
 about:
   home: https://bitbucket.org/slepc/slepc4py
