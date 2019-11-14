@@ -1,15 +1,17 @@
-{% set version = '3.11.0' %}
-{% set sha256 = '9812d8b398fd6f30e872993421e420c64387c74fc3dab410208f13d7270257cf' %}
+
+{% set name = 'slepc4py' %}
+{% set version = '3.12.0' %}
+{% set sha256 = '6310a641ebe4b02a547a9f8a9a3c72d44c9fb05b7a5c0c3a9bf6e6a3f1ff07ce' %}
 
 {% set version_xy = ".".join(version.split(".")[:2]) + ".*" %}
 
 package:
-  name: slepc4py
+  name: {{ name }}
   version: {{version}}
 
 source:
   fn: slepc4py-{{version}}.tar.gz
-  url: https://bitbucket.org/slepc/slepc4py/downloads/slepc4py-{{version}}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{sha256}}
 
 build:
