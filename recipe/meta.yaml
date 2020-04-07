@@ -1,7 +1,6 @@
-
-{% set name = 'slepc4py' %}
-{% set version = '3.12.0' %}
-{% set sha256 = '6310a641ebe4b02a547a9f8a9a3c72d44c9fb05b7a5c0c3a9bf6e6a3f1ff07ce' %}
+{% set name = "slepc4py" %}
+{% set version = "3.13.0" %}
+{% set sha256 = "6310a641ebe4b02a547a9f8a9a3c72d44c9fb05b7a5c0c3a9bf6e6a3f1ff07ce" %}
 
 {% set version_xy = ".".join(version.split(".")[:2]) + ".*" %}
 
@@ -12,10 +11,10 @@ package:
 source:
   fn: slepc4py-{{version}}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{sha256}}
+  sha256: ce05d8a1990771141689517a42682a27b1ac3f145fd3f1d12d820a15445e3549
 
 build:
-  number: 1
+  number: 0
   script: PETSC_DIR=$PREFIX SLEPC_DIR=$PREFIX pip -v install --no-deps .
   skip: true  # [win]
 
