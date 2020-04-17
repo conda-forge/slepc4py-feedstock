@@ -14,7 +14,7 @@ source:
   sha256: ce05d8a1990771141689517a42682a27b1ac3f145fd3f1d12d820a15445e3549
 
 build:
-  number: 0
+  number: 1
   script: PETSC_DIR=$PREFIX SLEPC_DIR=$PREFIX pip -v install --no-deps .
   skip: true  # [win]
 
