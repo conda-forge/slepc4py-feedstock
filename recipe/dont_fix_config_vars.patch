@@ -1,0 +1,13 @@
+diff --git a/conf/baseconf.py b/conf/baseconf.py
+index 8a2466a..b0707a6 100644
+--- a/conf/baseconf.py
++++ b/conf/baseconf.py
+@@ -54,6 +54,8 @@ from distutils.errors import DistutilsError
+ def fix_config_vars(names, values):
+     import os, re
+     values = list(values)
++    if 'CONDA_BUILD' in os.environ:
++        return values
+     if sys.platform == 'darwin':
+         if 'ARCHFLAGS' in os.environ:
+             ARCHFLAGS = os.environ['ARCHFLAGS']
