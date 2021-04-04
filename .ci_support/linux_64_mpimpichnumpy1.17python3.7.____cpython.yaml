@@ -11,9 +11,9 @@ channel_targets:
 docker_image:
 - quay.io/condaforge/linux-anvil-comp7
 mpi:
-- openmpi
+- mpich
 numpy:
-- '1.16'
+- '1.17'
 petsc:
 - '3.13'
 pin_run_as_build:
