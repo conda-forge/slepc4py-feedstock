@@ -5,7 +5,7 @@ c_compiler:
 c_compiler_version:
 - '11'
 channel_sources:
-- conda-forge,defaults
+- conda-forge
 channel_targets:
 - conda-forge main
 macos_machine:
@@ -13,7 +13,7 @@ macos_machine:
 mpi:
 - openmpi
 numpy:
-- '1.17'
+- '1.18'
 petsc:
 - '3.14'
 pin_run_as_build:
@@ -21,7 +21,7 @@ pin_run_as_build:
     min_pin: x.x
     max_pin: x.x
 python:
-- 3.8.* *_cpython
+- 3.6.* *_cpython
 slepc:
 - '3.14'
 target_platform:
