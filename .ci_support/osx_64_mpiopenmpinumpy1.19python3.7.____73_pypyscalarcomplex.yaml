@@ -14,16 +14,14 @@ mpi:
 - openmpi
 numpy:
 - '1.19'
-petsc:
-- '3.14'
 pin_run_as_build:
   python:
     min_pin: x.x
     max_pin: x.x
 python:
-- 3.9.* *_cpython
-slepc:
-- '3.14'
+- 3.7.* *_73_pypy
+scalar:
+- complex
 target_platform:
 - osx-64
 zip_keys:
