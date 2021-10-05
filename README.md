@@ -1,7 +1,7 @@
 About slepc4py
 ==============
 
-Home: https://gitlab.com/slepc/slepc4py
+Home: https://gitlab.com/slepc/slepc
 
 Package license: BSD-2-Clause
 
@@ -13,7 +13,21 @@ Current build status
 ====================
 
 
-<table>
+<table><tr>
+    <td>Travis</td>
+    <td>
+      <a href="https://travis-ci.com/conda-forge/slepc4py-feedstock">
+        <img alt="macOS" src="https://img.shields.io/travis/com/conda-forge/slepc4py-feedstock/master.svg?label=macOS">
+      </a>
+    </td>
+  </tr><tr>
+    <td>Drone</td>
+    <td>
+      <a href="https://cloud.drone.io/conda-forge/slepc4py-feedstock">
+        <img alt="linux" src="https://img.shields.io/drone/build/conda-forge/slepc4py-feedstock/master.svg?label=Linux">
+      </a>
+    </td>
+  </tr>
     
   <tr>
     <td>Azure</td>
@@ -27,143 +41,563 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux_64_mpimpichnumpy1.17python3.6.____cpython</td>
+              <td>linux_64_mpimpichnumpy1.18python3.6.____cpythonscalarcomplex</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=linux&configuration=linux_64_mpimpichnumpy1.17python3.6.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=linux&configuration=linux_64_mpimpichnumpy1.18python3.6.____cpythonscalarcomplex" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_mpimpichnumpy1.17python3.7.____cpython</td>
+              <td>linux_64_mpimpichnumpy1.18python3.6.____cpythonscalarreal</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=linux&configuration=linux_64_mpimpichnumpy1.17python3.7.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=linux&configuration=linux_64_mpimpichnumpy1.18python3.6.____cpythonscalarreal" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_mpimpichnumpy1.17python3.8.____cpython</td>
+              <td>linux_64_mpimpichnumpy1.18python3.7.____cpythonscalarcomplex</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=linux&configuration=linux_64_mpimpichnumpy1.17python3.8.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=linux&configuration=linux_64_mpimpichnumpy1.18python3.7.____cpythonscalarcomplex" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_mpimpichnumpy1.19python3.7.____73_pypy</td>
+              <td>linux_64_mpimpichnumpy1.18python3.7.____cpythonscalarreal</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=linux&configuration=linux_64_mpimpichnumpy1.19python3.7.____73_pypy" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=linux&configuration=linux_64_mpimpichnumpy1.18python3.7.____cpythonscalarreal" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_mpimpichnumpy1.19python3.9.____cpython</td>
+              <td>linux_64_mpimpichnumpy1.18python3.8.____cpythonscalarcomplex</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=linux&configuration=linux_64_mpimpichnumpy1.19python3.9.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=linux&configuration=linux_64_mpimpichnumpy1.18python3.8.____cpythonscalarcomplex" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_mpiopenmpinumpy1.17python3.6.____cpython</td>
+              <td>linux_64_mpimpichnumpy1.18python3.8.____cpythonscalarreal</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=linux&configuration=linux_64_mpiopenmpinumpy1.17python3.6.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=linux&configuration=linux_64_mpimpichnumpy1.18python3.8.____cpythonscalarreal" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_mpiopenmpinumpy1.17python3.7.____cpython</td>
+              <td>linux_64_mpimpichnumpy1.19python3.7.____73_pypyscalarcomplex</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=linux&configuration=linux_64_mpiopenmpinumpy1.17python3.7.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=linux&configuration=linux_64_mpimpichnumpy1.19python3.7.____73_pypyscalarcomplex" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_mpiopenmpinumpy1.17python3.8.____cpython</td>
+              <td>linux_64_mpimpichnumpy1.19python3.7.____73_pypyscalarreal</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=linux&configuration=linux_64_mpiopenmpinumpy1.17python3.8.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=linux&configuration=linux_64_mpimpichnumpy1.19python3.7.____73_pypyscalarreal" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_mpiopenmpinumpy1.19python3.7.____73_pypy</td>
+              <td>linux_64_mpimpichnumpy1.19python3.9.____cpythonscalarcomplex</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=linux&configuration=linux_64_mpiopenmpinumpy1.19python3.7.____73_pypy" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=linux&configuration=linux_64_mpimpichnumpy1.19python3.9.____cpythonscalarcomplex" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_mpiopenmpinumpy1.19python3.9.____cpython</td>
+              <td>linux_64_mpimpichnumpy1.19python3.9.____cpythonscalarreal</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=linux&configuration=linux_64_mpiopenmpinumpy1.19python3.9.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=linux&configuration=linux_64_mpimpichnumpy1.19python3.9.____cpythonscalarreal" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_mpimpichnumpy1.17python3.6.____cpython</td>
+              <td>linux_64_mpiopenmpinumpy1.18python3.6.____cpythonscalarcomplex</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=osx&configuration=osx_64_mpimpichnumpy1.17python3.6.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=linux&configuration=linux_64_mpiopenmpinumpy1.18python3.6.____cpythonscalarcomplex" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_mpimpichnumpy1.17python3.7.____cpython</td>
+              <td>linux_64_mpiopenmpinumpy1.18python3.6.____cpythonscalarreal</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=osx&configuration=osx_64_mpimpichnumpy1.17python3.7.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=linux&configuration=linux_64_mpiopenmpinumpy1.18python3.6.____cpythonscalarreal" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_mpimpichnumpy1.17python3.8.____cpython</td>
+              <td>linux_64_mpiopenmpinumpy1.18python3.7.____cpythonscalarcomplex</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=osx&configuration=osx_64_mpimpichnumpy1.17python3.8.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=linux&configuration=linux_64_mpiopenmpinumpy1.18python3.7.____cpythonscalarcomplex" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_mpimpichnumpy1.19python3.7.____73_pypy</td>
+              <td>linux_64_mpiopenmpinumpy1.18python3.7.____cpythonscalarreal</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=osx&configuration=osx_64_mpimpichnumpy1.19python3.7.____73_pypy" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=linux&configuration=linux_64_mpiopenmpinumpy1.18python3.7.____cpythonscalarreal" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_mpimpichnumpy1.19python3.9.____cpython</td>
+              <td>linux_64_mpiopenmpinumpy1.18python3.8.____cpythonscalarcomplex</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=osx&configuration=osx_64_mpimpichnumpy1.19python3.9.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=linux&configuration=linux_64_mpiopenmpinumpy1.18python3.8.____cpythonscalarcomplex" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_mpiopenmpinumpy1.17python3.6.____cpython</td>
+              <td>linux_64_mpiopenmpinumpy1.18python3.8.____cpythonscalarreal</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=osx&configuration=osx_64_mpiopenmpinumpy1.17python3.6.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=linux&configuration=linux_64_mpiopenmpinumpy1.18python3.8.____cpythonscalarreal" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_mpiopenmpinumpy1.17python3.7.____cpython</td>
+              <td>linux_64_mpiopenmpinumpy1.19python3.7.____73_pypyscalarcomplex</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=osx&configuration=osx_64_mpiopenmpinumpy1.17python3.7.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=linux&configuration=linux_64_mpiopenmpinumpy1.19python3.7.____73_pypyscalarcomplex" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_mpiopenmpinumpy1.17python3.8.____cpython</td>
+              <td>linux_64_mpiopenmpinumpy1.19python3.7.____73_pypyscalarreal</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=osx&configuration=osx_64_mpiopenmpinumpy1.17python3.8.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=linux&configuration=linux_64_mpiopenmpinumpy1.19python3.7.____73_pypyscalarreal" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_mpiopenmpinumpy1.19python3.7.____73_pypy</td>
+              <td>linux_64_mpiopenmpinumpy1.19python3.9.____cpythonscalarcomplex</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=osx&configuration=osx_64_mpiopenmpinumpy1.19python3.7.____73_pypy" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=linux&configuration=linux_64_mpiopenmpinumpy1.19python3.9.____cpythonscalarcomplex" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_mpiopenmpinumpy1.19python3.9.____cpython</td>
+              <td>linux_64_mpiopenmpinumpy1.19python3.9.____cpythonscalarreal</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=osx&configuration=osx_64_mpiopenmpinumpy1.19python3.9.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=linux&configuration=linux_64_mpiopenmpinumpy1.19python3.9.____cpythonscalarreal" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_aarch64_mpimpichnumpy1.18python3.6.____cpythonscalarcomplex</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=linux&configuration=linux_aarch64_mpimpichnumpy1.18python3.6.____cpythonscalarcomplex" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_aarch64_mpimpichnumpy1.18python3.6.____cpythonscalarreal</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=linux&configuration=linux_aarch64_mpimpichnumpy1.18python3.6.____cpythonscalarreal" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_aarch64_mpimpichnumpy1.18python3.7.____cpythonscalarcomplex</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=linux&configuration=linux_aarch64_mpimpichnumpy1.18python3.7.____cpythonscalarcomplex" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_aarch64_mpimpichnumpy1.18python3.7.____cpythonscalarreal</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=linux&configuration=linux_aarch64_mpimpichnumpy1.18python3.7.____cpythonscalarreal" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_aarch64_mpimpichnumpy1.18python3.8.____cpythonscalarcomplex</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=linux&configuration=linux_aarch64_mpimpichnumpy1.18python3.8.____cpythonscalarcomplex" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_aarch64_mpimpichnumpy1.18python3.8.____cpythonscalarreal</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=linux&configuration=linux_aarch64_mpimpichnumpy1.18python3.8.____cpythonscalarreal" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_aarch64_mpimpichnumpy1.19python3.7.____73_pypyscalarcomplex</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=linux&configuration=linux_aarch64_mpimpichnumpy1.19python3.7.____73_pypyscalarcomplex" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_aarch64_mpimpichnumpy1.19python3.7.____73_pypyscalarreal</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=linux&configuration=linux_aarch64_mpimpichnumpy1.19python3.7.____73_pypyscalarreal" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_aarch64_mpimpichnumpy1.19python3.9.____cpythonscalarcomplex</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=linux&configuration=linux_aarch64_mpimpichnumpy1.19python3.9.____cpythonscalarcomplex" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_aarch64_mpimpichnumpy1.19python3.9.____cpythonscalarreal</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=linux&configuration=linux_aarch64_mpimpichnumpy1.19python3.9.____cpythonscalarreal" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_aarch64_mpiopenmpinumpy1.18python3.6.____cpythonscalarcomplex</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=linux&configuration=linux_aarch64_mpiopenmpinumpy1.18python3.6.____cpythonscalarcomplex" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_aarch64_mpiopenmpinumpy1.18python3.6.____cpythonscalarreal</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=linux&configuration=linux_aarch64_mpiopenmpinumpy1.18python3.6.____cpythonscalarreal" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_aarch64_mpiopenmpinumpy1.18python3.7.____cpythonscalarcomplex</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=linux&configuration=linux_aarch64_mpiopenmpinumpy1.18python3.7.____cpythonscalarcomplex" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_aarch64_mpiopenmpinumpy1.18python3.7.____cpythonscalarreal</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=linux&configuration=linux_aarch64_mpiopenmpinumpy1.18python3.7.____cpythonscalarreal" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_aarch64_mpiopenmpinumpy1.18python3.8.____cpythonscalarcomplex</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=linux&configuration=linux_aarch64_mpiopenmpinumpy1.18python3.8.____cpythonscalarcomplex" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_aarch64_mpiopenmpinumpy1.18python3.8.____cpythonscalarreal</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=linux&configuration=linux_aarch64_mpiopenmpinumpy1.18python3.8.____cpythonscalarreal" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_aarch64_mpiopenmpinumpy1.19python3.7.____73_pypyscalarcomplex</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=linux&configuration=linux_aarch64_mpiopenmpinumpy1.19python3.7.____73_pypyscalarcomplex" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_aarch64_mpiopenmpinumpy1.19python3.7.____73_pypyscalarreal</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=linux&configuration=linux_aarch64_mpiopenmpinumpy1.19python3.7.____73_pypyscalarreal" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_aarch64_mpiopenmpinumpy1.19python3.9.____cpythonscalarcomplex</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=linux&configuration=linux_aarch64_mpiopenmpinumpy1.19python3.9.____cpythonscalarcomplex" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_aarch64_mpiopenmpinumpy1.19python3.9.____cpythonscalarreal</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=linux&configuration=linux_aarch64_mpiopenmpinumpy1.19python3.9.____cpythonscalarreal" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_ppc64le_mpimpichnumpy1.18python3.6.____cpythonscalarcomplex</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=linux&configuration=linux_ppc64le_mpimpichnumpy1.18python3.6.____cpythonscalarcomplex" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_ppc64le_mpimpichnumpy1.18python3.6.____cpythonscalarreal</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=linux&configuration=linux_ppc64le_mpimpichnumpy1.18python3.6.____cpythonscalarreal" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_ppc64le_mpimpichnumpy1.18python3.7.____cpythonscalarcomplex</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=linux&configuration=linux_ppc64le_mpimpichnumpy1.18python3.7.____cpythonscalarcomplex" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_ppc64le_mpimpichnumpy1.18python3.7.____cpythonscalarreal</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=linux&configuration=linux_ppc64le_mpimpichnumpy1.18python3.7.____cpythonscalarreal" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_ppc64le_mpimpichnumpy1.18python3.8.____cpythonscalarcomplex</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=linux&configuration=linux_ppc64le_mpimpichnumpy1.18python3.8.____cpythonscalarcomplex" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_ppc64le_mpimpichnumpy1.18python3.8.____cpythonscalarreal</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=linux&configuration=linux_ppc64le_mpimpichnumpy1.18python3.8.____cpythonscalarreal" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_ppc64le_mpimpichnumpy1.19python3.7.____73_pypyscalarcomplex</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=linux&configuration=linux_ppc64le_mpimpichnumpy1.19python3.7.____73_pypyscalarcomplex" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_ppc64le_mpimpichnumpy1.19python3.7.____73_pypyscalarreal</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=linux&configuration=linux_ppc64le_mpimpichnumpy1.19python3.7.____73_pypyscalarreal" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_ppc64le_mpimpichnumpy1.19python3.9.____cpythonscalarcomplex</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=linux&configuration=linux_ppc64le_mpimpichnumpy1.19python3.9.____cpythonscalarcomplex" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_ppc64le_mpimpichnumpy1.19python3.9.____cpythonscalarreal</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=linux&configuration=linux_ppc64le_mpimpichnumpy1.19python3.9.____cpythonscalarreal" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_ppc64le_mpiopenmpinumpy1.18python3.6.____cpythonscalarcomplex</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=linux&configuration=linux_ppc64le_mpiopenmpinumpy1.18python3.6.____cpythonscalarcomplex" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_ppc64le_mpiopenmpinumpy1.18python3.6.____cpythonscalarreal</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=linux&configuration=linux_ppc64le_mpiopenmpinumpy1.18python3.6.____cpythonscalarreal" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_ppc64le_mpiopenmpinumpy1.18python3.7.____cpythonscalarcomplex</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=linux&configuration=linux_ppc64le_mpiopenmpinumpy1.18python3.7.____cpythonscalarcomplex" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_ppc64le_mpiopenmpinumpy1.18python3.7.____cpythonscalarreal</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=linux&configuration=linux_ppc64le_mpiopenmpinumpy1.18python3.7.____cpythonscalarreal" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_ppc64le_mpiopenmpinumpy1.18python3.8.____cpythonscalarcomplex</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=linux&configuration=linux_ppc64le_mpiopenmpinumpy1.18python3.8.____cpythonscalarcomplex" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_ppc64le_mpiopenmpinumpy1.18python3.8.____cpythonscalarreal</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=linux&configuration=linux_ppc64le_mpiopenmpinumpy1.18python3.8.____cpythonscalarreal" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_ppc64le_mpiopenmpinumpy1.19python3.7.____73_pypyscalarcomplex</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=linux&configuration=linux_ppc64le_mpiopenmpinumpy1.19python3.7.____73_pypyscalarcomplex" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_ppc64le_mpiopenmpinumpy1.19python3.7.____73_pypyscalarreal</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=linux&configuration=linux_ppc64le_mpiopenmpinumpy1.19python3.7.____73_pypyscalarreal" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_ppc64le_mpiopenmpinumpy1.19python3.9.____cpythonscalarcomplex</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=linux&configuration=linux_ppc64le_mpiopenmpinumpy1.19python3.9.____cpythonscalarcomplex" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_ppc64le_mpiopenmpinumpy1.19python3.9.____cpythonscalarreal</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=linux&configuration=linux_ppc64le_mpiopenmpinumpy1.19python3.9.____cpythonscalarreal" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_mpimpichnumpy1.18python3.6.____cpythonscalarcomplex</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=osx&configuration=osx_64_mpimpichnumpy1.18python3.6.____cpythonscalarcomplex" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_mpimpichnumpy1.18python3.6.____cpythonscalarreal</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=osx&configuration=osx_64_mpimpichnumpy1.18python3.6.____cpythonscalarreal" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_mpimpichnumpy1.18python3.7.____cpythonscalarcomplex</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=osx&configuration=osx_64_mpimpichnumpy1.18python3.7.____cpythonscalarcomplex" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_mpimpichnumpy1.18python3.7.____cpythonscalarreal</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=osx&configuration=osx_64_mpimpichnumpy1.18python3.7.____cpythonscalarreal" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_mpimpichnumpy1.18python3.8.____cpythonscalarcomplex</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=osx&configuration=osx_64_mpimpichnumpy1.18python3.8.____cpythonscalarcomplex" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_mpimpichnumpy1.18python3.8.____cpythonscalarreal</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=osx&configuration=osx_64_mpimpichnumpy1.18python3.8.____cpythonscalarreal" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_mpimpichnumpy1.19python3.7.____73_pypyscalarcomplex</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=osx&configuration=osx_64_mpimpichnumpy1.19python3.7.____73_pypyscalarcomplex" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_mpimpichnumpy1.19python3.7.____73_pypyscalarreal</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=osx&configuration=osx_64_mpimpichnumpy1.19python3.7.____73_pypyscalarreal" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_mpimpichnumpy1.19python3.9.____cpythonscalarcomplex</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=osx&configuration=osx_64_mpimpichnumpy1.19python3.9.____cpythonscalarcomplex" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_mpimpichnumpy1.19python3.9.____cpythonscalarreal</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=osx&configuration=osx_64_mpimpichnumpy1.19python3.9.____cpythonscalarreal" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_mpiopenmpinumpy1.18python3.6.____cpythonscalarcomplex</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=osx&configuration=osx_64_mpiopenmpinumpy1.18python3.6.____cpythonscalarcomplex" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_mpiopenmpinumpy1.18python3.6.____cpythonscalarreal</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=osx&configuration=osx_64_mpiopenmpinumpy1.18python3.6.____cpythonscalarreal" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_mpiopenmpinumpy1.18python3.7.____cpythonscalarcomplex</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=osx&configuration=osx_64_mpiopenmpinumpy1.18python3.7.____cpythonscalarcomplex" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_mpiopenmpinumpy1.18python3.7.____cpythonscalarreal</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=osx&configuration=osx_64_mpiopenmpinumpy1.18python3.7.____cpythonscalarreal" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_mpiopenmpinumpy1.18python3.8.____cpythonscalarcomplex</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=osx&configuration=osx_64_mpiopenmpinumpy1.18python3.8.____cpythonscalarcomplex" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_mpiopenmpinumpy1.18python3.8.____cpythonscalarreal</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=osx&configuration=osx_64_mpiopenmpinumpy1.18python3.8.____cpythonscalarreal" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_mpiopenmpinumpy1.19python3.7.____73_pypyscalarcomplex</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=osx&configuration=osx_64_mpiopenmpinumpy1.19python3.7.____73_pypyscalarcomplex" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_mpiopenmpinumpy1.19python3.7.____73_pypyscalarreal</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=osx&configuration=osx_64_mpiopenmpinumpy1.19python3.7.____73_pypyscalarreal" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_mpiopenmpinumpy1.19python3.9.____cpythonscalarcomplex</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=osx&configuration=osx_64_mpiopenmpinumpy1.19python3.9.____cpythonscalarcomplex" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_mpiopenmpinumpy1.19python3.9.____cpythonscalarreal</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5831&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/slepc4py-feedstock?branchName=master&jobName=osx&configuration=osx_64_mpiopenmpinumpy1.19python3.9.____cpythonscalarreal" alt="variant">
                 </a>
               </td>
             </tr>
