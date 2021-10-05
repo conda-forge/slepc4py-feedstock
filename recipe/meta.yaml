@@ -1,8 +1,12 @@
 {% set name = "slepc4py" %}
 {% set version = "3.16.0" %}
 {% set sha256 = "e18850ebccb1e7c59accfbdbe4d004402abbde7f4e1291b0d2c5b560b308fb88" %}
+{% set build = 0 %}
 
 {% set version_xy = version.rsplit('.', 1)[0] %}
+{% if scalar == "real" %}
+{% set build = build + 100 %}
+{% endif %}
 
 package:
   name: slepc4py
@@ -14,9 +18,12 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: {{ build }}
   script: PETSC_DIR=$PREFIX SLEPC_DIR=$PREFIX pip -v install --no-deps .
   skip: true  # [win]
+  string: {{ scalar }}_h{{ PKG_HASH }}_{{ build }}
+  track_features:
+    - slepc4py_complex  # [scalar == "complex"]
 
 requirements:
   build:
@@ -26,21 +33,21 @@ requirements:
     - pip
     - numpy
     - {{ mpi }}
-    - petsc {{ version_xy }}.*
-    - slepc {{ version_xy }}.*
-    - petsc4py {{ version_xy }}.*
+    - petsc {{ version_xy }}.* *{{ scalar }}*
+    - slepc {{ version_xy }}.* *{{ scalar }}*
+    - petsc4py {{ version_xy }}.* *{{ scalar }}*
   run:
     - python
     - {{ pin_compatible('numpy') }}
     - {{ mpi }}
-    - petsc  # pinned by petsc run_exports
-    - slepc  # pinned by slepc run_exports
-    - petsc4py {{ version_xy }}.*
+    - petsc * *{{ scalar }}*  # pinned by petsc run_exports
+    - slepc * *{{ scalar }}*  # pinned by slepc run_exports
+    - petsc4py {{ version_xy }}.* *{{ scalar }}*
   run_constrained:
     - mpi4py >=3.0.1
 
 about:
-  home: https://gitlab.com/slepc/slepc4py
+  home: https://gitlab.com/slepc/slepc
   summary: Python bindings for SLEPc
   license: BSD-2-Clause
   license_file: LICENSE.rst
