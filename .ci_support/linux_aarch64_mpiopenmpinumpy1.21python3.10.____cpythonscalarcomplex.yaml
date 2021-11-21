@@ -17,15 +17,15 @@ docker_image:
 mpi:
 - openmpi
 numpy:
-- '1.18'
+- '1.21'
 pin_run_as_build:
   python:
     min_pin: x.x
     max_pin: x.x
 python:
-- 3.6.* *_cpython
+- 3.10.* *_cpython
 scalar:
-- real
+- complex
 target_platform:
 - linux-aarch64
 zip_keys:
