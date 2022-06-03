@@ -88,6 +88,7 @@ jobs:
         CONFIG: linux_64_mpiopenmpinumpy1.21python3.10.____cpythonscalarreal
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+    maxParallel: 19
   timeoutInMinutes: 360
 
   steps:
