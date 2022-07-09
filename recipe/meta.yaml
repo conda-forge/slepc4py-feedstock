@@ -1,7 +1,7 @@
 {% set name = "slepc4py" %}
 {% set version = "3.17.1" %}
 {% set sha256 = "967d5d045526088ff5b7b2cde76f8b4d1fee3a2a68481f85224b0795e6613eb9" %}
-{% set build = 2 %}
+{% set build = 3 %}
 
 {% set version_xy = version.rsplit('.', 1)[0] %}
 {% if scalar == "real" %}
@@ -48,9 +48,9 @@ requirements:
     - python
     - {{ pin_compatible('numpy') }}
     - {{ mpi }}
-    - petsc * *{{ scalar }}*  # pinned by petsc run_exports
-    - slepc * *{{ scalar }}*  # pinned by slepc run_exports
-    - petsc4py {{ version_xy }}.* *{{ scalar }}*
+    - petsc  # pinned by petsc run_exports
+    - slepc  # pinned by slepc run_exports
+    - petsc4py {{ version_xy }}.*  # build pinned by petsc4py->petsc
   run_constrained:
     - mpi4py >=3.0.1
 
