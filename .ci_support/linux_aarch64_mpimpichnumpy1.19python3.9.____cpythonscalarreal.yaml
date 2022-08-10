@@ -22,6 +22,8 @@ numpy:
 - '1.19'
 openmpi:
 - '4'
+petsc:
+- '3.16'
 pin_run_as_build:
   python:
     min_pin: x.x
@@ -30,6 +32,8 @@ python:
 - 3.9.* *_cpython
 scalar:
 - real
+slepc:
+- '3.16'
 target_platform:
 - linux-aarch64
 zip_keys:
