@@ -19,7 +19,7 @@ numpy:
 openmpi:
 - '4'
 petsc:
-- '3.17'
+- '3.18'
 pin_run_as_build:
   python:
     min_pin: x.x
@@ -29,9 +29,10 @@ python:
 scalar:
 - complex
 slepc:
-- '3.17'
+- '3.18'
 target_platform:
 - linux-64
 zip_keys:
 - - python
   - numpy
+  - channel_sources
