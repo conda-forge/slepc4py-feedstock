@@ -38,6 +38,12 @@ jobs:
       osx_64_mpimpichnumpy1.23python3.11.____cpythonscalarreal:
         CONFIG: osx_64_mpimpichnumpy1.23python3.11.____cpythonscalarreal
         UPLOAD_PACKAGES: 'True'
+      osx_64_mpimpichnumpy1.26python3.12.____cpythonscalarcomplex:
+        CONFIG: osx_64_mpimpichnumpy1.26python3.12.____cpythonscalarcomplex
+        UPLOAD_PACKAGES: 'True'
+      osx_64_mpimpichnumpy1.26python3.12.____cpythonscalarreal:
+        CONFIG: osx_64_mpimpichnumpy1.26python3.12.____cpythonscalarreal
+        UPLOAD_PACKAGES: 'True'
       osx_64_mpiopenmpinumpy1.22python3.10.____cpythonscalarcomplex:
         CONFIG: osx_64_mpiopenmpinumpy1.22python3.10.____cpythonscalarcomplex
         UPLOAD_PACKAGES: 'True'
@@ -68,6 +74,12 @@ jobs:
       osx_64_mpiopenmpinumpy1.23python3.11.____cpythonscalarreal:
         CONFIG: osx_64_mpiopenmpinumpy1.23python3.11.____cpythonscalarreal
         UPLOAD_PACKAGES: 'True'
+      osx_64_mpiopenmpinumpy1.26python3.12.____cpythonscalarcomplex:
+        CONFIG: osx_64_mpiopenmpinumpy1.26python3.12.____cpythonscalarcomplex
+        UPLOAD_PACKAGES: 'True'
+      osx_64_mpiopenmpinumpy1.26python3.12.____cpythonscalarreal:
+        CONFIG: osx_64_mpiopenmpinumpy1.26python3.12.____cpythonscalarreal
+        UPLOAD_PACKAGES: 'True'
       osx_arm64_mpimpichnumpy1.22python3.10.____cpythonscalarcomplex:
         CONFIG: osx_arm64_mpimpichnumpy1.22python3.10.____cpythonscalarcomplex
         UPLOAD_PACKAGES: 'True'
@@ -92,6 +104,12 @@ jobs:
       osx_arm64_mpimpichnumpy1.23python3.11.____cpythonscalarreal:
         CONFIG: osx_arm64_mpimpichnumpy1.23python3.11.____cpythonscalarreal
         UPLOAD_PACKAGES: 'True'
+      osx_arm64_mpimpichnumpy1.26python3.12.____cpythonscalarcomplex:
+        CONFIG: osx_arm64_mpimpichnumpy1.26python3.12.____cpythonscalarcomplex
+        UPLOAD_PACKAGES: 'True'
+      osx_arm64_mpimpichnumpy1.26python3.12.____cpythonscalarreal:
+        CONFIG: osx_arm64_mpimpichnumpy1.26python3.12.____cpythonscalarreal
+        UPLOAD_PACKAGES: 'True'
       osx_arm64_mpiopenmpinumpy1.22python3.10.____cpythonscalarcomplex:
         CONFIG: osx_arm64_mpiopenmpinumpy1.22python3.10.____cpythonscalarcomplex
         UPLOAD_PACKAGES: 'True'
@@ -115,6 +133,12 @@ jobs:
         UPLOAD_PACKAGES: 'True'
       osx_arm64_mpiopenmpinumpy1.23python3.11.____cpythonscalarreal:
         CONFIG: osx_arm64_mpiopenmpinumpy1.23python3.11.____cpythonscalarreal
+        UPLOAD_PACKAGES: 'True'
+      osx_arm64_mpiopenmpinumpy1.26python3.12.____cpythonscalarcomplex:
+        CONFIG: osx_arm64_mpiopenmpinumpy1.26python3.12.____cpythonscalarcomplex
+        UPLOAD_PACKAGES: 'True'
+      osx_arm64_mpiopenmpinumpy1.26python3.12.____cpythonscalarreal:
+        CONFIG: osx_arm64_mpiopenmpinumpy1.26python3.12.____cpythonscalarreal
         UPLOAD_PACKAGES: 'True'
     maxParallel: 19
   timeoutInMinutes: 360
