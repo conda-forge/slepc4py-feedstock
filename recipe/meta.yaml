@@ -1,6 +1,6 @@
 {% set name = "slepc4py" %}
-{% set version = "3.19.1" %}
-{% set sha256 = "68303f4acef8efc0542ab288a19159d0e6cdf313726f573e0bea2edb3d2c9595" %}
+{% set version = "3.19.2" %}
+{% set sha256 = "da8b6a7aaaf5e4497b896b2e478c42dd9de4fb31da93eb294181bea3bb60c767" %}
 {% set build = 0 %}
 
 {% set version_xy = version.rsplit('.', 1)[0] %}
@@ -33,13 +33,13 @@ requirements:
   build:
     - {{ compiler('c') }}
     - python                              # [build_platform != target_platform]
-    - cython                              # [build_platform != target_platform]
+    - cython <3                           # [build_platform != target_platform]
     - cross-python_{{ target_platform }}  # [build_platform != target_platform]
     - numpy                               # [build_platform != target_platform]
     - {{ mpi }}  # [mpi == 'openmpi' and build_platform != target_platform]
   host:
     - python
-    - cython
+    - cython <3
     - pip
     - numpy
     - {{ mpi }}
