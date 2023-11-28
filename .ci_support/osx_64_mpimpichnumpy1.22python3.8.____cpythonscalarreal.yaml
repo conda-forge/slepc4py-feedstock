@@ -19,7 +19,7 @@ numpy:
 openmpi:
 - '4'
 petsc:
-- '3.18'
+- '3.20'
 pin_run_as_build:
   python:
     min_pin: x.x
@@ -29,7 +29,7 @@ python:
 scalar:
 - real
 slepc:
-- '3.18'
+- '3.20'
 target_platform:
 - osx-64
 zip_keys:
