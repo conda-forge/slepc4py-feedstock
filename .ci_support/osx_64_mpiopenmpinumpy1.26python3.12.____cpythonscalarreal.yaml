@@ -33,7 +33,7 @@ python:
 scalar:
 - real
 slepc:
-- '3.20'
+- '3.21'
 target_platform:
 - osx-64
 zip_keys:
