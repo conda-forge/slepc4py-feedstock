@@ -1,6 +1,6 @@
 {% set name = "slepc4py" %}
-{% set version = "3.21.0" %}
-{% set sha256 = "bfbd90162633486f67a448d2052e1f7182529d18e8bde87367bc4f4dd58e857f" %}
+{% set version = "3.21.1" %}
+{% set sha256 = "bc8e0e270643eef9b63b249080b8fe4433be0b697d55032d9f768ef310bd7b07" %}
 {% set build = 0 %}
 
 {% set version_xy = version.rsplit('.', 1)[0] %}
@@ -31,6 +31,7 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - python                              # [build_platform != target_platform]
     - cython >=3                          # [build_platform != target_platform]
     - cross-python_{{ target_platform }}  # [build_platform != target_platform]
