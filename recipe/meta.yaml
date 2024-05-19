@@ -1,12 +1,9 @@
 {% set name = "slepc4py" %}
 {% set version = "3.21.1" %}
 {% set sha256 = "bc8e0e270643eef9b63b249080b8fe4433be0b697d55032d9f768ef310bd7b07" %}
-{% set build = 0 %}
+{% set build = 101 %}
 
 {% set version_xy = version.rsplit('.', 1)[0] %}
-{% if scalar == "real" %}
-{% set build = build + 100 %}
-{% endif %}
 
 package:
   name: slepc4py
@@ -24,9 +21,9 @@ build:
     - export SLEPC_DIR=$PREFIX
     - {{ PYTHON }} -m pip -v install --no-deps .
   skip: true  # [win]
-  string: {{ scalar }}_h{{ PKG_HASH }}_{{ build }}
   track_features:
     - slepc4py_complex  # [scalar == "complex"]
+    - slepc4py_cuda     # [device != "host"]
 
 requirements:
   build:
@@ -43,14 +40,13 @@ requirements:
     - pip
     - numpy
     - {{ mpi }}
-    - petsc {{ version_xy }}.* {{ scalar }}_*
-    - slepc {{ version_xy }}.* {{ scalar }}_*
-    - petsc4py {{ version_xy }}.* {{ scalar }}_*
+    - slepc {{ version_xy }}.* {{ scalar }}_*               # [device == 'host']
+    - slepc {{ version_xy }}.* {{ device }}_{{ scalar }}_*  # [device != 'host']
+    - petsc4py
   run:
     - python
     - {{ pin_compatible('numpy') }}
     - {{ mpi }}
-    - petsc  # pinned by petsc run_exports
     - slepc  # pinned by slepc run_exports
     - petsc4py {{ version_xy }}.*  # build pinned by petsc4py->petsc
   run_constrained:
