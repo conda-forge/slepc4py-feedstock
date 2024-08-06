@@ -1,0 +1,25 @@
+From c6c4c8471a77908d7d83108399f59bb1451909d1 Mon Sep 17 00:00:00 2001
+From: "Jose E. Roman" <jroman@dsic.upv.es>
+Date: Tue, 6 Aug 2024 09:27:36 +0200
+Subject: [PATCH] pip-slepc4py: Fix NumPy dependency pin
+
+---
+ src/binding/slepc4py/setup.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/binding/slepc4py/setup.py b/src/binding/slepc4py/setup.py
+index 4205672bd2..24722f1b3a 100755
+--- a/src/binding/slepc4py/setup.py
++++ b/src/binding/slepc4py/setup.py
+@@ -226,7 +226,7 @@ def run_setup():
+         try:
+             import numpy
+             major = int(numpy.__version__.partition('.')[0])
+-            numpy_pin = 'numpy>=%d,<%d' % (major, major + 1)
++            numpy_pin = 'numpy>=1.19' if major >= 2 else 'numpy<2'
+         except ImportError:
+             numpy_pin = 'numpy'
+         setup_args['setup_requires'] = ['numpy']
+-- 
+GitLab
+
