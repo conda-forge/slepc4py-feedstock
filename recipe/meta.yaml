@@ -1,7 +1,7 @@
 {% set name = "slepc4py" %}
 {% set version = "3.21.1" %}
 {% set sha256 = "bc8e0e270643eef9b63b249080b8fe4433be0b697d55032d9f768ef310bd7b07" %}
-{% set build = 103 %}
+{% set build = 104 %}
 
 {% set version_xy = version.rsplit('.', 1)[0] %}
 
@@ -12,6 +12,8 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
+  patches:
+    - MR685.patch
 
 build:
   number: {{ build }}
@@ -45,7 +47,6 @@ requirements:
     - petsc4py
   run:
     - python
-    - {{ pin_compatible('numpy') }}
     - {{ mpi }}
     - slepc  # pinned by slepc run_exports
     - petsc4py {{ version_xy }}.*  # build pinned by petsc4py->petsc
