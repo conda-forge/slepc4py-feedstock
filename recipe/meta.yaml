@@ -45,6 +45,7 @@ requirements:
     - slepc {{ version_xy }}.* {{ device }}_{{ scalar }}_*  # [device != 'host']
     - petsc4py {{ version_xy }}.*
   run:
+    - python
     - petsc4py {{ version_xy }}.*  # build pinned by petsc4py->petsc
   run_constrained:
     - mpi4py >=3.0.1
