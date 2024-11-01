@@ -24,8 +24,6 @@ numpy:
 - '2.0'
 openmpi:
 - '5'
-petsc4py:
-- '3.21'
 pin_run_as_build:
   python:
     min_pin: x.x
@@ -35,7 +33,7 @@ python:
 scalar:
 - real
 slepc:
-- '3.21'
+- '3.19'
 slepc4py:
 - '3.21'
 target_platform:
@@ -45,4 +43,3 @@ zip_keys:
   - cdt_name
 - - python
   - numpy
-  - channel_sources
