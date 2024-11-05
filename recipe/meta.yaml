@@ -1,7 +1,7 @@
 {% set name = "slepc4py" %}
 {% set version = "3.22.1" %}
 {% set sha256 = "056d98bf09f5202d25842d5a4a4f553445103e1e26155da52f007c508f3140f8" %}
-{% set build = 0 %}
+{% set build = 1 %}
 
 {% set version_xy = version.rsplit('.', 1)[0] %}
 
