@@ -34,8 +34,6 @@ python:
 - 3.11.* *_cpython
 scalar:
 - real
-slepc:
-- '3.19'
 slepc4py:
 - '3.21'
 target_platform:
