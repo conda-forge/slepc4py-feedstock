@@ -35,7 +35,7 @@ python:
 scalar:
 - real
 slepc4py:
-- '3.21'
+- '3.22'
 target_platform:
 - osx-arm64
 zip_keys:

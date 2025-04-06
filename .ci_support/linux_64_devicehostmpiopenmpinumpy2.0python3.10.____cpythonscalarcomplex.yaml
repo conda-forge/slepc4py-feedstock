@@ -33,7 +33,7 @@ python:
 scalar:
 - complex
 slepc4py:
-- '3.21'
+- '3.22'
 target_platform:
 - linux-64
 zip_keys:
