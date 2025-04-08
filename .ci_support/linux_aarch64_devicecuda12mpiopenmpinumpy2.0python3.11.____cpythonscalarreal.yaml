@@ -32,8 +32,6 @@ python:
 - 3.11.* *_cpython
 scalar:
 - real
-slepc4py:
-- '3.22'
 target_platform:
 - linux-aarch64
 zip_keys:

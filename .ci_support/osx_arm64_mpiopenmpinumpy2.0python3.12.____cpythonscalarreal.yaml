@@ -34,8 +34,6 @@ python:
 - 3.12.* *_cpython
 scalar:
 - real
-slepc4py:
-- '3.22'
 target_platform:
 - osx-arm64
 zip_keys:

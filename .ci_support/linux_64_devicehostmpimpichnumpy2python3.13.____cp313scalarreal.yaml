@@ -32,8 +32,6 @@ python:
 - 3.13.* *_cp313
 scalar:
 - real
-slepc4py:
-- '3.22'
 target_platform:
 - linux-64
 zip_keys:

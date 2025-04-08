@@ -32,8 +32,6 @@ python:
 - 3.10.* *_cpython
 scalar:
 - complex
-slepc4py:
-- '3.22'
 target_platform:
 - linux-ppc64le
 zip_keys:
