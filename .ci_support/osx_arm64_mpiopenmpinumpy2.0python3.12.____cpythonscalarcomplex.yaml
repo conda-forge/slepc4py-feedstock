@@ -34,8 +34,6 @@ python:
 - 3.12.* *_cpython
 scalar:
 - complex
-slepc4py:
-- '3.21'
 target_platform:
 - osx-arm64
 zip_keys:
