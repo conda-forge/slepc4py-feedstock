@@ -1,6 +1,6 @@
 context:
   name: slepc4py
-  version: "3.23.0"
+  version: "3.23.1"
   build: 0
   version_xy: ${{ (version | split('.'))[:2] | join('.') }}
 
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: cc00cfd02bf302363adf03404bdcf6d8d4f1b9448cb28d4305eef3e88ddd9059
+  sha256: da3ac9854ad120699359c112be857298bd3e4b62c0cecee752f34ad2dec81cd9
 
 build:
   number: ${{ build }}
@@ -30,9 +30,9 @@ requirements:
         - cython >=3
         - cross-python_${{ target_platform }}
         - numpy
-    - if: mpi == 'openmpi' and build_platform != target_platform
-      then:
-        - ${{ mpi }}
+        - if: mpi == 'openmpi'
+          then:
+            - ${{ mpi }}
   host:
     - python
     - cython >=3
