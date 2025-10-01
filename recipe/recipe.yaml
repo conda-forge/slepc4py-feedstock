@@ -1,8 +1,11 @@
 context:
   name: slepc4py
-  version: "3.23.3"
+  version: "3.24.0"
   build: 0
   version_xy: ${{ (version | split('.'))[:2] | join('.') }}
+  python_min: ${{ python_min | default("3.10") }}
+  abi3_tag: cp${{ python_min | split(".") | join("") }}
+  build_abi3: ${{ is_abi3 and match(python, ">=" + python_min) }}
 
 package:
   name: ${{ name }}
@@ -10,15 +13,21 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: aa00f90939c4b312b9efe041e4f50f8f7947f50cb8c0d8f6ca60d4d78dda92c9
+  sha256: 50c9b6a75f47db8131c690b1cda07a15bf532cb79a3e645a0b08d7941f6738f2
 
 build:
   number: ${{ build }}
-  skip: win
+  skip: win or (is_abi3 and not match(python, python_min + ".*"))
+  python:
+    version_independent: ${{ build_abi3 }}
   script:
-    - export PETSC_DIR=$PREFIX
-    - export SLEPC_DIR=$PREFIX
+    content:
+    - ${{ PYTHON }} conf/cythonize.py
     - ${{ PYTHON }} -m pip -v install --no-deps .
+    env:
+      PETSC_DIR: "$PREFIX"
+      SLEPC_DIR: "$PREFIX"
+      SLEPC4PY_BUILD_PYSABI: ${{ abi3_tag }}
 
 requirements:
   build:
@@ -27,7 +36,7 @@ requirements:
     - if: build_platform != target_platform
       then:
         - python
-        - cython >=3
+        - cython
         - cross-python_${{ target_platform }}
         - numpy
         - if: mpi == 'openmpi'
@@ -35,7 +44,9 @@ requirements:
             - ${{ mpi }}
   host:
     - python
-    - cython >=3
+    - if: build_abi3
+      then: python-abi3
+    - cython
     - pip
     - setuptools
     - numpy
@@ -57,12 +68,53 @@ tests:
       pip_check: true
       imports:
         - slepc4py
+        - slepc4py.SLEPc
+
+  - script:
+      file: run_test
+      env:
+        CONDA_BUILD: "1"
+    files:
+      source:
+        - test/test_object.py
+
+  - if: build_abi3
+    then:
+      - script:
+          - abi3audit $PREFIX/lib/python3.*/site-packages/slepc4py/lib/*.so -s -v --assume-minimum-abi3 3.10
+        requirements:
+          run:
+            - python 3.13.*
+            - abi3audit
+
+      # for abi3, run tests against more Pythons
+      - script:
+          file: run_test
+          env:
+            CONDA_BUILD: "1"
+        files:
+          source:
+            - test/test_object.py
+        requirements:
+          run:
+            - python ${{ python_min }}.*
+
+      - script:
+          file: run_test
+          env:
+            CONDA_BUILD: "1"
+        files:
+          source:
+            - test/test_object.py
+        requirements:
+          run:
+            - python 3.13.*
 
 about:
   summary: Python bindings for SLEPc
   license: BSD-2-Clause
   license_file: LICENSE.rst
-  homepage: https://gitlab.com/slepc/slepc
+  homepage: https://slepc.upv.es/release/slepc4py/
 
 extra:
   recipe-maintainers:
