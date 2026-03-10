@@ -1,6 +1,6 @@
 context:
   name: slepc4py
-  version: "3.24.2"
+  version: "3.24.3"
   build: 0
   version_xy: ${{ (version | split('.'))[:2] | join('.') }}
   python_min: ${{ python_min | default("3.10") }}
@@ -13,7 +13,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: cbcff24004e35cdb17587c534d68329b6467574df93028d04596bfaf3baccbb7
+  sha256: 7b814fd5561838b1e0a4821d5e83e6aad061cd57b3ce50549598caa2e65b13c0
 
 build:
   number: ${{ build }}
