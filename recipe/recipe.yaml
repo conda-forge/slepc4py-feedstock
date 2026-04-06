@@ -64,40 +64,13 @@ requirements:
     - mpi4py >=3.0.1
 
 tests:
-  - python:
-      pip_check: true
-      imports:
-        - slepc4py
-        - slepc4py.SLEPc
-
-  - script:
-      file: run_test
-      env:
-        CONDA_BUILD: "1"
-    files:
-      source:
-        - test/test_object.py
-
-  - if: build_abi3
+  - if: device == 'host'
     then:
-      - script:
-          - abi3audit $PREFIX/lib/python3.*/site-packages/slepc4py/lib/*.so -s -v --assume-minimum-abi3 3.10
-        requirements:
-          run:
-            - python 3.13.*
-            - abi3audit
-
-      # for abi3, run tests against more Pythons
-      - script:
-          file: run_test
-          env:
-            CONDA_BUILD: "1"
-        files:
-          source:
-            - test/test_object.py
-        requirements:
-          run:
-            - python ${{ python_min }}.*
+      - python:
+          pip_check: true
+          imports:
+            - slepc4py
+            - slepc4py.SLEPc
 
       - script:
           file: run_test
@@ -106,9 +79,43 @@ tests:
         files:
           source:
             - test/test_object.py
-        requirements:
-          run:
-            - python 3.13.*
+
+      - if: build_abi3
+        then:
+          - script:
+              - abi3audit $PREFIX/lib/python3.*/site-packages/slepc4py/lib/*.so -s -v --assume-minimum-abi3 3.10
+            requirements:
+              run:
+                - python 3.13.*
+                - abi3audit
+
+          # for abi3, run tests against more Pythons
+          - script:
+              file: run_test
+              env:
+                CONDA_BUILD: "1"
+            files:
+              source:
+                - test/test_object.py
+            requirements:
+              run:
+                - python ${{ python_min }}.*
+
+          - script:
+              file: run_test
+              env:
+                CONDA_BUILD: "1"
+            files:
+              source:
+                - test/test_object.py
+            requirements:
+              run:
+                - python 3.13.*
+    else:
+      # cuda builds are ~untestable
+      # because petsc 3.25 links libnvidia-ml, a driver library
+      - python:
+          pip_check: true
 
 about:
   summary: Python bindings for SLEPc
