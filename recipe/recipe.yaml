@@ -1,6 +1,6 @@
 context:
   name: slepc4py
-  version: "3.25.0"
+  version: "3.25.1"
   build: 0
   version_xy: ${{ (version | split('.'))[:2] | join('.') }}
   python_min: ${{ python_min | default("3.10") }}
@@ -13,7 +13,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 8b81061b94a9c9a7586ff2b8cc1dfe40d373981b0c7d2a28bdad154bbc6f832e
+  sha256: d5ac5c132ff7f5450fc511a50bdd2fce20b30e7618f53b6d64207832de33c75e
 
 build:
   number: ${{ build }}
@@ -74,8 +74,6 @@ tests:
 
       - script:
           file: run_test
-          env:
-            CONDA_BUILD: "1"
         files:
           source:
             - test/test_object.py
@@ -92,8 +90,6 @@ tests:
           # for abi3, run tests against more Pythons
           - script:
               file: run_test
-              env:
-                CONDA_BUILD: "1"
             files:
               source:
                 - test/test_object.py
@@ -103,8 +99,6 @@ tests:
 
           - script:
               file: run_test
-              env:
-                CONDA_BUILD: "1"
             files:
               source:
                 - test/test_object.py
