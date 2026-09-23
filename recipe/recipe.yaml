@@ -81,7 +81,7 @@ tests:
       - if: build_abi3
         then:
           - script:
-              - abi3audit $PREFIX/lib/python3.*/site-packages/slepc4py/lib/*.so -s -v --assume-minimum-abi3 3.10
+              - abi3audit $PREFIX/lib/python3.*/site-packages/slepc4py/lib/*.so -s -v --assume-minimum-abi3 3.11
             requirements:
               run:
                 - python 3.*
