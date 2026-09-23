@@ -84,7 +84,7 @@ tests:
               - abi3audit $PREFIX/lib/python3.*/site-packages/slepc4py/lib/*.so -s -v --assume-minimum-abi3 3.10
             requirements:
               run:
-                - python 3.13.*
+                - python 3.*
                 - abi3audit
 
           # for abi3, run tests against more Pythons
@@ -104,7 +104,7 @@ tests:
                 - test/test_object.py
             requirements:
               run:
-                - python 3.13.*
+                - python 3.14.*
     else:
       # cuda builds are ~untestable
       # because petsc 3.25 links libnvidia-ml, a driver library
