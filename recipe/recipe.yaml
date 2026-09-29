@@ -3,7 +3,7 @@ context:
   version: "3.26.0"
   build: 0
   version_xy: ${{ (version | split('.'))[:2] | join('.') }}
-  python_min: ${{ python_min | default("3.10") }}
+  python_min: ${{ python_min | default("3.11") }}
   abi3_tag: cp${{ python_min | split(".") | join("") }}
   build_abi3: ${{ is_abi3 and match(python, ">=" + python_min) }}
 
@@ -66,28 +66,24 @@ requirements:
 tests:
   - if: device == 'host'
     then:
-      - python:
-          pip_check: true
-          imports:
-            - slepc4py
-            - slepc4py.SLEPc
-
-      - script:
-          file: run_test
-        files:
-          source:
-            - test/test_object.py
-
       - if: build_abi3
         then:
+          - python:
+              imports:
+                - slepc4py
+                - slepc4py.SLEPc
+              pip_check: true
+              python_version:
+                - ${{ python_min }}.*
+                - "*"
+
           - script:
-              - abi3audit $PREFIX/lib/python3.*/site-packages/slepc4py/lib/*.so -s -v --assume-minimum-abi3 3.11
+              - abi3audit $SP_DIR//slepc4py/lib/*.so -s -v --assume-minimum-abi3 ${{ python_min }}
             requirements:
               run:
-                - python 3.*
                 - abi3audit
+                - python 3.*
 
-          # for abi3, run tests against more Pythons
           - script:
               file: run_test
             files:
@@ -104,10 +100,22 @@ tests:
                 - test/test_object.py
             requirements:
               run:
-                - python 3.14.*
+                - python 3.*
+        else:
+          - python:
+              imports:
+                - slepc4py
+                - slepc4py.SLEPc
+              pip_check: true
+
+          - script:
+              file: run_test
+            files:
+              source:
+                - test/test_object.py
     else:
       # cuda builds are ~untestable
-      # because petsc 3.25 links libnvidia-ml, a driver library
+      # because petsc links libnvidia-ml, a driver library
       - python:
           pip_check: true
 
